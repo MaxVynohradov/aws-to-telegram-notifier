@@ -1,0 +1,13 @@
+service: aws-nodejs
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  awsToTgNotifier:
+    handler: src/functions/awsToTgNotifier
+    name: AwsToTgNotifier
+    description: Aggregate info about AWS services availability and push notifications to Telegram
+    memorySize: 128
+    timeout: 60

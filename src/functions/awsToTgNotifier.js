@@ -13,8 +13,7 @@ const awsToTgNotifier = async(event, context, callback) => {
     Details: ${pageData.url}
   `);
   console.log('Tg Sender Result', tgSenderResult);
+  callback(null, { status: 200 })
 };
 
-module.exports = {
-  awsToTgNotifier,
-};
+module.exports = awsToTgNotifier;
