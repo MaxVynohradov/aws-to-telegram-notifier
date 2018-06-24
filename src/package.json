@@ -1,0 +1,15 @@
+{
+  "name": "aws-to-telegram-notifier",
+  "version": "1.0.0",
+  "description": "Serverless app to aggregate info about AWS services availability",
+  "author": "Maxim Vynohradov",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "rss-parser": "^3.4.1",
+    "telegraf": "^3.21.2",
+    "telegraph-node": "^1.0.4"
+  }
+}
